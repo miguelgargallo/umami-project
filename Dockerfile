@@ -4,7 +4,6 @@ RUN apk update && apk add git
 RUN git clone https://github.com/umami-software/umami
 WORKDIR /umami
 
-RUN npm install -g yarn
 RUN yarn install
 
 RUN yarn build
